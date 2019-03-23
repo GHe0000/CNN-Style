@@ -22,6 +22,5 @@ python eval.py --model_file wave.ckpt-done --image_file test.jpg
 - Enjoy！
 
 ## 3：备注
-- 在img里可以找到训练好的模型的训练图，text.jpg为测试用图
-- 感谢Google Colab提供免费GPU服务器（训练模型用）
+- 感谢Kaggle数据科学竞赛平台提供免费GPU计算
 - 在我家电脑（CPU:Intel Celeron E3400（PS:某宝最低包邮5元一个）无GPU加速）上使用训练好的模型进行测试只需26.812510秒
