@@ -1,44 +1,7 @@
-# CNN-P£º»ùÓÚTensorFlow-SlimµÄÍ¼Æ¬·ç¸ñÇ¨ÒÆ
-## 0£º»·¾³
-- 64Î»ÏµÍ³£¨TensorFlowÖ»Ö§³Ö64Î»£©
-- Python 3£¨½¨ÒéÓÃAnaconda»òMiniconda£©
-- °²×°TensorFlow >= 1.0£¨½¨Òé°²×°GPU°æ±¾£©
-```
-pip install tensorFlow>=1.0
-```
-- °²×°Pyyaml
-```
-pip install pyyaml
-```
-
-## 1£ºÊ¹ÓÃÑµÁ·ºÃµÄÄ£ĞÍ
-- CMDÇĞ»»µ½CNN-P¸ùÄ¿Â¼
-- Ê¹ÓÃÃüÁî£ºpython eval.py --model_file Ä£ĞÍÂ·¾¶ --image_file Í¼Æ¬Â·¾¶ ÀıÈç
-```
-python eval.py --model_file models/wave.ckpt-done --image_file img/test.jpg
-```
-- Enjoy£¡
-
-## 2.ÑµÁ·×Ô¼ºµÄÄ£ĞÍ
-
-### 2.1£º×¼±¸
-- ÏÂÔØ[VGG16Ä£ĞÍ](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz)²¢½âÑ¹
-- ÔÚCNN-P¸ùÄ¿Â¼ÏÂĞÂ½¨Ò»¸öÎÄ¼ş¼Ğpretrained£¬²¢½«vgg16.ckpt¸´ÖÆµ½pretrainedµÄÎÄ¼ş¼ĞÏÂ
-- ÏÂÔØ[COCOÊı¾İ¼¯](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)²¢½âÑ¹µ½CNN-P¸ùÄ¿Â¼
-- ´ò¿ªconf/wave.yml,½«Æä¸´ÖÆÒ»·İ£¬²¢ĞŞ¸ÄÎª<Ä£ĞÍÃû×Ö>.yml
-- ´ò¿ªËü½øĞĞĞŞ¸Ä£¬½«style_image£ºimg/wave.jpgĞŞ¸ÄÎª±»ÌáÈ¡·ç¸ñÍ¼Æ¬Â·¾¶£¬name:"wave"ĞŞ¸ÄÎª<Ä£ĞÍÃû×Ö>
-
-### 2.2£ºÑµÁ·
-- CMDÇĞ»»µ½CNN-P¸ùÄ¿Â¼
-- Ê¹ÓÃÃüÁî£ºpython train.py -c conf/<Ä£ĞÍÃû×Ö>.yml
-- £¨¿ÉÑ¡£©Ê¹ÓÃÃüÁî´ò¿ªÊı¾İ¿ÉÊÓ»¯Tensorboard£ºtensorboard --logdir models/<Ä£ĞÍÃû×Ö>/
-
-### 2.3£º½áÊøÑµÁ·
-- ²î²»¶àÑµÁ·1Íò¶à´Îºó
-- Ctrl + CÍ£Ö¹ÑµÁ·
-- ÔÚmodels/<Ä£ĞÍÃû×Ö>ÕÒµ½ÑµÁ·ºÃµÄÄ£ĞÍ
-
-## 3£º±¸×¢
-- ÔÚimgÀï¿ÉÒÔÕÒµ½ÑµÁ·ºÃµÄÄ£ĞÍµÄÑµÁ·Í¼£¬text.jpgÎª²âÊÔÓÃÍ¼
-- ¸ĞĞ»Google ColabÌá¹©Ãâ·ÑGPU·şÎñÆ÷£¨ÑµÁ·Ä£ĞÍÓÃ£©
-- ÔÚÎÒ¼ÒµçÄÔ£¨CPU:Intel Celeron E3400£¨PS:Ä³±¦×îµÍ°üÓÊ5ÔªÒ»¸ö£©ÎŞGPU¼ÓËÙ£©ÉÏÊ¹ÓÃÑµÁ·ºÃµÄÄ£ĞÍ½øĞĞ²âÊÔÖ»Ğè26.812510Ãë
+# TensorFlow Android æµ‹è¯•
+## è¯¥é¡¹ç›®ä¸ºTensorFlow Lite åœ¨æ‰‹æœºä¸Šçš„æµ‹è¯•
+### å½“å‰è½¯ä»¶ ï¼š
+### TF Classify:å›¾ç‰‡è¯†åˆ«
+### TF Detect:å›¾ç‰‡æ£€æµ‹
+### TF Stylize:å›¾ç‰‡é£æ ¼è¿ç§»
+### TF Speech:å£°éŸ³è¯†åˆ«
