@@ -112,6 +112,7 @@ def net(image, training):
         res4 = residual(res3, 128, 3, 1)
     with tf.variable_scope('res5'):
         res5 = residual(res4, 128, 3, 1)
+    saver2 = tf.train.Saver()
     # print(res5.get_shape())
     with tf.variable_scope('deconv1'):
         # deconv1 = relu(instance_norm(conv2d_transpose(res5, 128, 64, 3, 2)))
