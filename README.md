@@ -1,44 +1,27 @@
-# CNN-P£º»ùÓÚTensorFlow-SlimµÄÍ¼Æ¬·ç¸ñÇ¨ÒÆ
-## 0£º»·¾³
-- 64Î»ÏµÍ³£¨TensorFlowÖ»Ö§³Ö64Î»£©
-- Python 3£¨½¨ÒéÓÃAnaconda»òMiniconda£©
-- °²×°TensorFlow >= 1.0£¨½¨Òé°²×°GPU°æ±¾£©
+# 2019å¹´ç§‘æŠ€æ–‡åŒ–è‰ºæœ¯èŠ‚ åˆ1704 Guotao He
+
+# CNN-Styleï¼šåŸºäºTensorFlow-Slimçš„å›¾ç‰‡é£æ ¼è¿ç§»ï¼ˆå•Evalï¼‰
+## 0ï¼šç¯å¢ƒ
+- 64ä½ç³»ç»Ÿï¼ˆTensorFlowåªæ”¯æŒ64ä½ï¼‰
+- Python 3ï¼ˆå»ºè®®ç”¨Anacondaæˆ–Minicondaï¼‰
+- å®‰è£…TensorFlow >= 1.0ï¼ˆå»ºè®®å®‰è£…GPUç‰ˆæœ¬ï¼‰
 ```
 pip install tensorFlow>=1.0
 ```
-- °²×°Pyyaml
+- å®‰è£…Pyyaml
 ```
 pip install pyyaml
 ```
 
-## 1£ºÊ¹ÓÃÑµÁ·ºÃµÄÄ£ĞÍ
-- CMDÇĞ»»µ½CNN-P¸ùÄ¿Â¼
-- Ê¹ÓÃÃüÁî£ºpython eval.py --model_file Ä£ĞÍÂ·¾¶ --image_file Í¼Æ¬Â·¾¶ ÀıÈç
+## ä½¿ç”¨
+- CMDåˆ‡æ¢åˆ°CNN-Styleæ ¹ç›®å½•
+- ä½¿ç”¨å‘½ä»¤ï¼špython eval.py --model_file æ¨¡å‹è·¯å¾„ --image_file å›¾ç‰‡è·¯å¾„ ä¾‹å¦‚
 ```
-python eval.py --model_file models/wave.ckpt-done --image_file img/test.jpg
+python eval.py --model_file wave.ckpt-done --image_file test.jpg
 ```
-- Enjoy£¡
+- Enjoyï¼
 
-## 2.ÑµÁ·×Ô¼ºµÄÄ£ĞÍ
-
-### 2.1£º×¼±¸
-- ÏÂÔØ[VGG16Ä£ĞÍ](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz)²¢½âÑ¹
-- ÔÚCNN-P¸ùÄ¿Â¼ÏÂĞÂ½¨Ò»¸öÎÄ¼ş¼Ğpretrained£¬²¢½«vgg16.ckpt¸´ÖÆµ½pretrainedµÄÎÄ¼ş¼ĞÏÂ
-- ÏÂÔØ[COCOÊı¾İ¼¯](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)²¢½âÑ¹µ½CNN-P¸ùÄ¿Â¼
-- ´ò¿ªconf/wave.yml,½«Æä¸´ÖÆÒ»·İ£¬²¢ĞŞ¸ÄÎª<Ä£ĞÍÃû×Ö>.yml
-- ´ò¿ªËü½øĞĞĞŞ¸Ä£¬½«style_image£ºimg/wave.jpgĞŞ¸ÄÎª±»ÌáÈ¡·ç¸ñÍ¼Æ¬Â·¾¶£¬name:"wave"ĞŞ¸ÄÎª<Ä£ĞÍÃû×Ö>
-
-### 2.2£ºÑµÁ·
-- CMDÇĞ»»µ½CNN-P¸ùÄ¿Â¼
-- Ê¹ÓÃÃüÁî£ºpython train.py -c conf/<Ä£ĞÍÃû×Ö>.yml
-- £¨¿ÉÑ¡£©Ê¹ÓÃÃüÁî´ò¿ªÊı¾İ¿ÉÊÓ»¯Tensorboard£ºtensorboard --logdir models/<Ä£ĞÍÃû×Ö>/
-
-### 2.3£º½áÊøÑµÁ·
-- ²î²»¶àÑµÁ·1Íò¶à´Îºó
-- Ctrl + CÍ£Ö¹ÑµÁ·
-- ÔÚmodels/<Ä£ĞÍÃû×Ö>ÕÒµ½ÑµÁ·ºÃµÄÄ£ĞÍ
-
-## 3£º±¸×¢
-- ÔÚimgÀï¿ÉÒÔÕÒµ½ÑµÁ·ºÃµÄÄ£ĞÍµÄÑµÁ·Í¼£¬text.jpgÎª²âÊÔÓÃÍ¼
-- ¸ĞĞ»Google ColabÌá¹©Ãâ·ÑGPU·şÎñÆ÷£¨ÑµÁ·Ä£ĞÍÓÃ£©
-- ÔÚÎÒ¼ÒµçÄÔ£¨CPU:Intel Celeron E3400£¨PS:Ä³±¦×îµÍ°üÓÊ5ÔªÒ»¸ö£©ÎŞGPU¼ÓËÙ£©ÉÏÊ¹ÓÃÑµÁ·ºÃµÄÄ£ĞÍ½øĞĞ²âÊÔÖ»Ğè26.812510Ãë
+## 3ï¼šå¤‡æ³¨
+- åœ¨imgé‡Œå¯ä»¥æ‰¾åˆ°è®­ç»ƒå¥½çš„æ¨¡å‹çš„è®­ç»ƒå›¾ï¼Œtext.jpgä¸ºæµ‹è¯•ç”¨å›¾
+- æ„Ÿè°¢Google Colabæä¾›å…è´¹GPUæœåŠ¡å™¨ï¼ˆè®­ç»ƒæ¨¡å‹ç”¨ï¼‰
+- åœ¨æˆ‘å®¶ç”µè„‘ï¼ˆCPU:Intel Celeron E3400ï¼ˆPS:æŸå®æœ€ä½åŒ…é‚®5å…ƒä¸€ä¸ªï¼‰æ— GPUåŠ é€Ÿï¼‰ä¸Šä½¿ç”¨è®­ç»ƒå¥½çš„æ¨¡å‹è¿›è¡Œæµ‹è¯•åªéœ€26.812510ç§’
