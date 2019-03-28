@@ -8,7 +8,7 @@
 ```
 pip install tensorFlow>=1.0
 ```
-- 安装Pyyaml
+- ~~安装Pyyaml~~
 ```
 pip install pyyaml
 ```
