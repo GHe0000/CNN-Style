@@ -1,4 +1,4 @@
-# 2019年科技文化艺术节 初1704 Guotao He
+# 2019年科技文化艺术节 1704 Guotao He
 
 # CNN-Style：基于TensorFlow-Slim的图片风格迁移（单Eval）
 ## 0：环境
