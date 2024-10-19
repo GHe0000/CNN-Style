@@ -1,5 +1,3 @@
-# 2019年科技文化艺术节 1704 Guotao He
-
 # TensorFlow Android 测试
 ## （该项目为TensorFlow Lite 在手机上的测试）
 ## 当前软件 ：
