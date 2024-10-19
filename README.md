@@ -1,5 +1,3 @@
-# 2019年科技文化艺术节 1704 Guotao He
-
 # CNN-Style：基于TensorFlow-Slim的图片风格迁移（单Eval）
 ## 0：环境
 - 64位系统（TensorFlow只支持64位）
